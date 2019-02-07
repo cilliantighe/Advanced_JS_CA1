@@ -72,4 +72,5 @@ Used for positioing the card detail of the pokemon
 */
 .cardInfo {
   position: absolute;
+  background-color: #FFFFFF;
 }
