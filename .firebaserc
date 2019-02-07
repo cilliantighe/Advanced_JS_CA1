@@ -1,5 +1,6 @@
 {
   "projects": {
-    "ca1": "advaned-js-ca1"
+    "ca1": "advanced-js-ca1-a8008",
+    "default": "advaned-js-ca1"
   }
 }

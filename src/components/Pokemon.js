@@ -66,7 +66,7 @@ class Pokemon extends React.Component {
           src={this.state.images.front_default}
           alt={this.state.name}
         />
-        <div className={this.state.animate === true ? "cardInfo card" : "hide"}>
+        <div className={this.state.animate === true ? "card cardInfo" : "hide"}>
           <div className="card-content">
             <p className="has-text-dark">
               <span className="has-text-weight-semibold">Pokédex Entry: </span>{" "}
