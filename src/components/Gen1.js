@@ -41,7 +41,6 @@ class Gen1 extends React.Component {
           pokemonList: response.data.pokemon_species,
           loadTime: response.data.pokemon_species.length
         });
-        console.log(response);
         /* Another api is required for this app as the first call only gives the
         name and a url(which does not contain all the information required). A
         url is created using the name of the retrieved pokemon

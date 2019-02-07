@@ -8,7 +8,6 @@ class Pokemon extends React.Component {
     this.state = {
       id: this.props.id,
       name: this.props.name,
-      move: "",
       images: this.props.images,
       animate: false,
       detail: false
@@ -40,13 +39,14 @@ class Pokemon extends React.Component {
     that holds only the name. Each pokemon's move list varies in size. For the
     purpose of the application I'm only going to display one move.
     */
-    let moveList = "";
+    let moveList = [];
+    let move = "";
     moveList = this.props.moves.map(move => {
       return move.move;
     });
 
     // Adds the first move from the array to the variable
-    this.state.move = moveList[0].name;
+    move = moveList[0].name;
 
     /*
     The image will animate when the mouse is hovering over it. A small card,
@@ -78,7 +78,7 @@ class Pokemon extends React.Component {
             </p>
             <p className="has-text-dark is-capitalized">
               <span className="has-text-weight-semibold">Move: </span>{" "}
-              {this.state.move.replace(/[^a-zA-Z ]/g, "")}
+              {move.replace(/[^a-zA-Z ]/g, "")}
             </p>
           </div>
         </div>

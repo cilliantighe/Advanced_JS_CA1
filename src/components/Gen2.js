@@ -41,7 +41,6 @@ class Gen2 extends React.Component {
           pokemonList: response.data.pokemon_species,
           loadTime: response.data.pokemon_species.length
         });
-        console.log(response);
         /* Another api is required for this app as the first call only gives the
         name and a url(which does not contain all the information required). A
         url is created using the name of the retrieved pokemon
@@ -105,7 +104,6 @@ class Gen2 extends React.Component {
   handleSelect(event) {
     const target = event.target;
     const value = target.options[target.selectedIndex].value;
-    console.log(target.options[target.selectedIndex].value);
     const name = target.name;
 
     this.setState({
