@@ -2,15 +2,30 @@
 <html lang="en">
 
 <head>
-  <title>React App</title>
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.7.2/css/bulma.min.css">
-  <link rel="stylesheet" href="https://jenil.github.io/bulmaswatch/journal/bulmaswatch.min.css">
+  <meta charset="utf-8" />
+  <link rel="shortcut icon" href="%PUBLIC_URL%/favicon.ico" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+  <meta name="theme-color" content="#000000" />
+
+  <!-- Link to Bulma CSS framework -->
+  <link rel="stylesheet" href="https://jenil.github.io/bulmaswatch/flatly/bulmaswatch.min.css">
   <script defer src="https://use.fontawesome.com/releases/v5.3.1/js/all.js"></script>
+  <link rel="manifest" href="%PUBLIC_URL%/manifest.json" />
+
+  <title>Pokédex</title>
+
 </head>
 
+<!--
+The fixed navbar class on the body is to give the appropiate padding
+for the rest of the content on the page.
+-->
 <body class="has-navbar-fixed-top">
-
-  <div id="root"></div>
+  <div id="loadS" class="ldScreen hide">
+    <img class="ldImage" src="https://gph.to/2UHU6V0" />
+    <p class="ldText">loading...</p>
+  </div>
+  <div id="root" class="container is-fluid"></div>
 
 </body>
 

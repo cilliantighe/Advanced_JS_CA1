@@ -1,12 +1,7 @@
 import React from "react";
 import ReactDOM from "react-dom";
-import PokemonGrid from "./components/PokemonGrid";
+import "./styles/index.css";
+import "./styles/animate.css";
+import App from "./App";
 
-ReactDOM.render(
-  <div>
-    <div className="container is-fluid">
-      <PokemonGrid />
-    </div>
-  </div>,
-  document.getElementById("root")
-);
+ReactDOM.render(<App />, document.getElementById("root"));

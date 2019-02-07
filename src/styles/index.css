@@ -1,0 +1,75 @@
+/*
+Styling the body and html elements with a subtle gradient
+*/
+body,
+html {
+  background-image: linear-gradient(120deg, #fdfbfb 0%, #ebedee 100%);
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+}
+
+/*
+Function that is used for hiding elements on the page
+*/
+.hide {
+  display: none;
+}
+.centerImage {
+  display: block;
+  margin: auto;
+}
+
+/*
+.ldScreen, .ldText, .ldImage are all classes that used for loading screen
+*/
+.ldScreen {
+  position: absolute;
+  margin: auto;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-image: linear-gradient(120deg, #fdfbfb 0%, #ebedee 100%);
+}
+
+.ldText {
+  text-align: center;
+  font-size: 1em;
+  position: absolute;
+  margin: auto;
+  top: 60%;
+  right: 0;
+  bottom: 0;
+  left: 0;
+}
+
+.ldImage {
+  position: absolute;
+  margin: auto;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  width: 10%;
+}
+
+/*
+Clears the default css settings applied by bulma
+*/
+.clearDefault {
+  background: none;
+  background-color: none;
+}
+.clearDefault select {
+  background: none;
+  background-color: none;
+}
+
+/*
+Used for positioing the card detail of the pokemon
+*/
+.cardInfo {
+  position: absolute;
+}
